@@ -10,7 +10,7 @@
 Where PATH is your path to .hex.
 ttyUSB0 may be not the same on your system. See avaliable ttyUSBs on your system in /dev
 
-Also if you want to flash into MPLAB X IDE after every build you can. Open project property -> Building -> Execution this line after build and past here your code for cosole (above). 
+Also if you want to flash using MPLAB X IDE after every build you can. Open project property -> Building -> Execution this line after build and past here your code for cosole (above). 
 
 
 
