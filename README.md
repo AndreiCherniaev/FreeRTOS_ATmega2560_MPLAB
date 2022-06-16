@@ -3,6 +3,10 @@
  it based on FreeRTOSv202112.00 and on ATmega328 example for Microchip Studio. 
  It was a little bit problem to import Microchip Studio's project to MPLAB X. I try to use "import" menu of MPLAB X but there are a problems with patch see https://www.microchip.com/forums/m822760.aspx#1209072 Now it works.
  All my code use the same license as FreeRTOS https://github.com/FreeRTOS/FreeRTOS-Kernel
+
+ There are some defines for all project located into Project property -> avr-gcc -> Preprocessing and messanges -> Defined symbols. It contains:
+ F_CPU=16000000UL
+ portUSE_TIMER0
  
  If you want to use Arduino bootloader so you can. Produce .hex file via MPLAB X and flash it  to ATmega using avrdude https://github.com/avrdudes/avrdude into console. Example
  
