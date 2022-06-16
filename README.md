@@ -3,3 +3,14 @@
  it based on FreeRTOSv202112.00 and on ATmega328 example for Microchip Studio. 
  It was a little bit problem to import Microchip Studio's project to MPLAB X. I try to use "import" menu of MPLAB X but there are a problems with patch see https://www.microchip.com/forums/m822760.aspx#1209072 Now it works.
  All my code use the same license as FreeRTOS https://github.com/FreeRTOS/FreeRTOS-Kernel
+ 
+ If you want to use Arduino bootloader so you can. Produce .hex file via MPLAB X and flash it  to ATmega using console. Example
+ 
+ avrdude -c arduino -p atmega2560 -cwiring -P /dev/ttyUSB0 -b115200 -D -Uflash:w:"PATH/blink_2560.X.production.hex"
+Where PATH is your path to .hex.
+ttyUSB0 may be not the same on your system. See avaliable ttyUSBs on your system in /dev
+
+Also if you want to flash into MPLAB X IDE after every build you can. Open project property -> Building -> Execution this line after build and past here your code for cosole (above). 
+
+
+
