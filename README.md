@@ -4,7 +4,7 @@
  It was a little bit problem to import Microchip Studio's project to MPLAB X. I try to use "import" menu of MPLAB X but there are a problems with patch see https://www.microchip.com/forums/m822760.aspx#1209072 Now it works.
  All my code use the same license as FreeRTOS https://github.com/FreeRTOS/FreeRTOS-Kernel
  
- If you want to use Arduino bootloader so you can. Produce .hex file via MPLAB X and flash it  to ATmega using console. Example
+ If you want to use Arduino bootloader so you can. Produce .hex file via MPLAB X and flash it  to ATmega using avrdude https://github.com/avrdudes/avrdude into console. Example
  
  avrdude -c arduino -p atmega2560 -cwiring -P /dev/ttyUSB0 -b115200 -D -Uflash:w:"PATH/blink_2560.X.production.hex"
 Where PATH is your path to .hex.
@@ -14,3 +14,4 @@ Also if you want to flash into MPLAB X IDE after every build you can. Open proje
 
 
 
+![MPLAB X interface 'Execution this line after build'](https://user-images.githubusercontent.com/27889022/174094326-4f63ff8e-092f-4172-ac61-015955ba51cc.png)
