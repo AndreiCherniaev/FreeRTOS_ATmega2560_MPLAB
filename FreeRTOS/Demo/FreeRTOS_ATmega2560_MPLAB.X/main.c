@@ -23,7 +23,7 @@ static void vBlinkOnboardUserLED( void *pvParameters )
 	for( ;; )
 	{
 		PORTB^= (1 << PB7); //vParTestToggleLED( 0 );
-		vTaskDelay(  ( TickType_t ) 1000  );
+		vTaskDelay(  ( TickType_t ) 1000 /portTICK_PERIOD_MS  );
 	}
 
 }
