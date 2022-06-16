@@ -104,8 +104,8 @@
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
-        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStepEnabled>true</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep>avrdude -c arduino -p atmega2560 -cwiring -P /dev/ttyUSB1 -b115200 -D -Uflash:w:"/home/a/Documents/MPLAB2/FreeRTOSv202112.00/FreeRTOS/Demo/FreeRTOS_ATmega2560_MPLAB.X/dist/default/production/FreeRTOS_ATmega2560_MPLAB.X.production.hex"</makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -168,7 +168,7 @@
         <property key="no-system-directories" value="false"/>
         <property key="optimization-level" value="-O1"/>
         <property key="pack-struct" value="true"/>
-        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros" value="F_CPU=16000000UL;portUSE_TIMER0"/>
         <property key="preprocessor-macros-undefined" value=""/>
         <property key="save-temps" value="false"/>
         <property key="short-calls" value="false"/>

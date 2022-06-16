@@ -40,7 +40,11 @@
  * See http://www.freertos.org/a00110.html
  *----------------------------------------------------------*/
 /* Clock setting. */
-#define configCPU_CLOCK_HZ			( ( unsigned long ) 8000000 )
+#if !defined(F_CPU)
+#define configCPU_CLOCK_HZ			( ( unsigned long ) 16000000 )
+#else
+#define configCPU_CLOCK_HZ			( F_CPU )
+#endif
 #define configTICK_RATE_HZ			( ( TickType_t ) 1000 )
 
 /* FreeRTOS kernel tick data width. */
