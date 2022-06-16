@@ -8,7 +8,7 @@
  F_CPU=16000000UL
  portUSE_TIMER0
  
- I rewrite defenition of configCPU_CLOCK_HZ into FreeRTOSConfig.h. Now if there is F_CPU so configCPU_CLOCK_HZ = F_CPU
+ I rewrite defenition of configCPU_CLOCK_HZ at FreeRTOSConfig.h. Now if there is F_CPU so configCPU_CLOCK_HZ = F_CPU
  
  If you want to use Arduino bootloader so you can. Produce .hex file via MPLAB X and flash it  to ATmega using avrdude https://github.com/avrdudes/avrdude into console. Example
  
