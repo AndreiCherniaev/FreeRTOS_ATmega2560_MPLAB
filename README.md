@@ -21,3 +21,5 @@ Also if you want to flash using MPLAB X IDE after every build you can. Open proj
 
 
 ![MPLAB X interface 'Execution this line after build'](https://user-images.githubusercontent.com/27889022/174094326-4f63ff8e-092f-4172-ac61-015955ba51cc.png)
+
+Code was tested on Atmega2560.
