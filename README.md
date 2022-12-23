@@ -12,7 +12,7 @@
  
  If you want to use Arduino bootloader so you can. Produce .hex file via MPLAB X and flash it  to ATmega using avrdude https://github.com/avrdudes/avrdude into console. Example
  
- avrdude -c arduino -p atmega2560 -cwiring -P /dev/ttyUSB0 -b115200 -D -Uflash:w:"PATH/blink_2560.X.production.hex"
+ avrdude -c arduino -p atmega2560 -P /dev/ttyUSB0 -b115200 -D -Uflash:w:"PATH/blink_2560.X.production.hex"
 Where PATH is your path to .hex.
 ttyUSB0 may be not the same on your system. See avaliable ttyUSBs on your system in /dev
 
